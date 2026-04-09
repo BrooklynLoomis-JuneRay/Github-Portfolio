@@ -1,0 +1,36 @@
+# Jekyll Configuration
+
+title: Brooklyn Loomis's Portfolio
+
+description: My personal portfolio showcasing my projects and experiences.
+
+baseurl: ""
+
+url: "http://yourdomain.com"
+
+author:
+  name: Brooklyn Loomis
+  email: brooklyn@example.com
+
+theme: minima
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Exclude certain files from the build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - _config.yml
+  - node_modules
+
+# Social Media Links
+social:
+  github: "https://github.com/BrooklynLoomis-JuneRay"
+  linkedin: "https://linkedin.com/in/brooklynlo"
+  twitter: "https://twitter.com/brooklynlo"
