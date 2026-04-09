@@ -8,145 +8,147 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <p>My name is Brooklyn Loomis (龍駿瑞). Check out my projects and get to know me!</p>
-    </header>
-    <section id="about">
-        <div class="about-header">
-            <h2>About Me</h2>
-            <a href="resume.pdf" download class="resume-button">Download Resume</a>
-        </div>
-        <h3>My Story</h3>
-        <p>I have had a lot of experience with computers. 
-            Since I was in elementary school I have done fun little coding projects but I've always wanted my programs to do something important. 
-            Whether that is doing something that can help a doctor, or a small business, 
-            or making a game that can brighten someone's day, this is the kind of programmer I want to be.
-            Since I began at Weber State I have been able to increase my skills in software design.
-            If you have any questions about my expertise feel free to reach out and to look through projects.
-        </p>
-        
 
-        <div class="skills-section">
-            <h3>Skills</h3>
-            <h4>Technical</h4>
-            <ul class="skills-grid">
-                <li><i class="fa-brands fa-html5"></i><span>HTML</span></li>
-                <li><i class="fa-solid fa-code"></i><span>ASP.NET Razor Pages</span></li>
-                <li><i class="fa-brands fa-unity"></i><span>Unity Development</span></li>
-                <li><i class="fa-solid fa-database"></i><span>SQL</span></li>
-                <li><i class="fa-solid fa-cube"></i><span>SolidWorks</span></li>
-            </ul>
-        
-            <h4>Project & Workflow</h4>
-            <ul class="skills-grid">
-                <li><i class="fa-solid fa-people-group"></i><span>Sprint Planning</span></li>
-                <li><i class="fa-solid fa-diagram-project"></i><span>Project Management</span></li>
-            </ul>
-        
-            <h4>Professional</h4>
-            <ul class="skills-grid">
-                <li><i class="fa-solid fa-comments"></i><span>Professional Communication</span></li>
-                <li><i class="fa-solid fa-headset"></i><span>Customer Service</span></li>
-                <li><i class="fa-solid fa-language"></i><span>Mandarin Chinese</span></li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="projects-grid">
-            <!-- Projects will go here -->
-            <div class="project-card">
-                <h3>University Grants System</h3>
-                <p class="project-description">
-                    My team and I created a system for faculty to create grant applications, give and recieve approval for applications, grade grants, and allocate funds broken down in a spreadsheet.
-                </p>
-                <p class="project-collaborators">
-                    <strong>Collaborators:</strong> Logan Baty, Max Harker, Pramish Mehta, Dawson Skalka, Spencer Zundel
-                </p>
-                <p class="project-date">
-                    <strong>Finished:</strong> March 2026
-                </p>
-                <p class="project-github">
-                    <a href="https://github.com/sprint0n/CS-4760" target="_blank" rel="noopener">
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-                
-            <div class="project-card">
-                <h3>RV Park Reservation system</h3>
-                <p class="project-description">
-                    The team and I created a system for allowing customers to create and pay for reservations on an RV park as well as allowing employees of the RV park to view these reservations.
-                </p>
-                <p class="project-collaborators">
-                    <strong>Collaborators:</strong> Chase Carter, Calvin Oats, Anastasia Armstrong, Peter Rosqvist, Yuta Kawabata
-                </p>
-                <p class="project-date">
-                    <strong>Finished:</strong> March 2025
-                </p>
-                <p class="project-github">
-                    This project is currently set to private and the owner of the repository is Chase Carter.
-                </p>
-            </div>
+<!-- NAV -->
+<nav>
+    <a href="#about" data-en="About" data-zh="關於我">About</a>
+    <a href="#projects" data-en="Projects" data-zh="專案">Projects</a>
+    <a href="#contact" data-en="Contact" data-zh="聯絡">Contact</a>
 
-            <div class="project-card">
-                <h3>"Lost Footage" Horror Game</h3>
-                <p class="project-description">
-                    The team and I created a system for allowing customers to create and pay for reservations on an RV park as well as allowing employees of the RV park to view these reservations.
-                </p>
-                <p class="project-collaborators">
-                    <strong>Collaborators:</strong> Logan Baty, Kaden Buchanan
-                </p>
-                <p class="project-date">
-                    <strong>Finished:</strong> Still working
-                </p>
-                <p class="project-github">
-                    This project is currently set to private, we plan later to release it on steam.
-                </p>
-            </div>
-            
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <ul>
-            <li>
-                <a href="https://www.linkedin.com/in/brooklyn-loomis-b169423a3/" target="_blank" rel="noopener">
-                    LinkedIn
-                </a> – Connect with me professionally.
-            </li>
-            <li>
-                <a href="https://github.com/BrooklynLoomis-JuneRay" target="_blank" rel="noopener">
-                    GitHub
-                </a> – See my coding projects and contributions.
-            </li>
-            <li>
-                <a href="https://github.com/BrooklynLoomis-JuneRay" target="_blank" rel="noopener">
-                    long.jun.rui.zhuan.hun@gmail.com
-                </a> – Contact me through my personal email.
-            </li>
-            <li>
-                <a href="https://github.com/BrooklynLoomis-JuneRay" target="_blank" rel="noopener">
-                    brooklynloomis@mail.weber.edu
-                </a> – Contact me through my school email.
-            </li>
+    <button onclick="toggleTheme()">🌙</button>
+    <button onclick="setLanguage('en')">EN</button>
+    <button onclick="setLanguage('zh')">中文</button>
+</nav>
 
-            
-                <!--<a href="https://www.facebook.com/your-profile" target="_blank" rel="noopener">
-                    Facebook
-                </a> – Follow me for updates and more.
-                <a href="https://www.instagram.com/your-profile" target="_blank" rel="noopener">
-                    Instagram
-                </a> – Check out my latest photos and stories.-->
+<!-- HEADER -->
+<header>
+    <h1 data-en="Welcome to My Portfolio" data-zh="歡迎來到我的作品集">
+        Welcome to My Portfolio
+    </h1>
+    <p data-en="My name is Brooklyn Loomis (龍駿瑞). Check out my projects and get to know me!"
+       data-zh="我叫 Brooklyn Loomis（龍駿瑞）。歡迎查看我的專案並認識我！">
+        My name is Brooklyn Loomis (龍駿瑞). Check out my projects and get to know me!
+    </p>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about-header">
+        <h2 data-en="About Me" data-zh="關於我">About Me</h2>
+        <a href="resume.pdf" download class="resume-button"
+           data-en="Download Resume" data-zh="下載履歷">
+            Download Resume
+        </a>
+    </div>
+
+    <h3 data-en="My Story" data-zh="我的故事">My Story</h3>
+
+    <p data-en="I have had a lot of experience with computers. Since I was in elementary school I have done fun little coding projects but I've always wanted my programs to do something important. Whether that is helping a doctor, a small business, or making a game that brightens someone's day, this is the kind of programmer I want to be. Since I began at Weber State I have increased my skills in software design. If you have any questions feel free to reach out."
+       data-zh="我在電腦領域有豐富的經驗。從小學開始我就做過許多有趣的小型程式專案，但我一直希望我的程式能夠發揮真正的影響力。不論是幫助醫生、支援小型企業，或是製作能帶給他人快樂的遊戲，這就是我想成為的程式設計師。在 Weber State 就讀期間，我持續提升自己的軟體設計能力。如果你有任何問題，歡迎與我聯絡。">
+    </p>
+
+    <!-- SKILLS -->
+    <div class="skills-section">
+        <h3 data-en="Skills" data-zh="技能">Skills</h3>
+
+        <h4 data-en="Technical" data-zh="技術">Technical</h4>
+        <ul class="skills-grid">
+            <li><i class="fa-brands fa-html5"></i><span data-en="HTML" data-zh="HTML">HTML</span></li>
+            <li><i class="fa-solid fa-code"></i><span data-en="ASP.NET Razor Pages" data-zh="ASP.NET Razor 頁面">ASP.NET Razor Pages</span></li>
+            <li><i class="fa-brands fa-unity"></i><span data-en="Unity Development" data-zh="Unity 開發">Unity Development</span></li>
+            <li><i class="fa-solid fa-database"></i><span data-en="SQL" data-zh="SQL">SQL</span></li>
+            <li><i class="fa-solid fa-cube"></i><span data-en="SolidWorks" data-zh="SolidWorks">SolidWorks</span></li>
         </ul>
-    </section>
 
-    <footer>
-        <p>© 2026 Brooklyn Loomis-JuneRay</p>
-    </footer>
+        <h4 data-en="Project & Workflow" data-zh="專案與流程">Project & Workflow</h4>
+        <ul class="skills-grid">
+            <li><i class="fa-solid fa-people-group"></i><span data-en="Sprint Planning" data-zh="敏捷衝刺規劃">Sprint Planning</span></li>
+            <li><i class="fa-solid fa-diagram-project"></i><span data-en="Project Management" data-zh="專案管理">Project Management</span></li>
+        </ul>
+
+        <h4 data-en="Professional" data-zh="職業技能">Professional</h4>
+        <ul class="skills-grid">
+            <li><i class="fa-solid fa-comments"></i><span data-en="Professional Communication" data-zh="專業溝通">Professional Communication</span></li>
+            <li><i class="fa-solid fa-headset"></i><span data-en="Customer Service" data-zh="客戶服務">Customer Service</span></li>
+            <li><i class="fa-solid fa-language"></i><span data-en="Mandarin Chinese" data-zh="中文（普通話）">Mandarin Chinese</span></li>
+        </ul>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2 data-en="My Projects" data-zh="我的專案">My Projects</h2>
+
+    <div class="projects-grid">
+
+        <div class="project-card">
+            <h3 data-en="University Grants System" data-zh="大學補助管理系統">
+                University Grants System
+            </h3>
+
+            <p data-en="Our team created a system for faculty to create grant applications, approve them, grade them, and allocate funds."
+               data-zh="我們團隊開發了一個系統，讓教師可以建立補助申請、進行審核與評分，並分配資金。">
+            </p>
+
+            <p>
+                <strong data-en="Collaborators:" data-zh="合作夥伴：">Collaborators:</strong>
+                Logan Baty, Max Harker, Pramish Mehta, Dawson Skalka, Spencer Zundel
+            </p>
+
+            <p>
+                <strong data-en="Finished:" data-zh="完成時間：">Finished:</strong>
+                March 2026
+            </p>
+
+            <a href="https://github.com/sprint0n/CS-4760" target="_blank"
+               data-en="View on GitHub" data-zh="查看 GitHub">
+                View on GitHub
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2 data-en="Contact Me" data-zh="聯絡我">Contact Me</h2>
+
+    <ul>
+        <li>
+            <a href="#" target="_blank">LinkedIn</a>
+            – <span data-en="Connect with me professionally." data-zh="與我建立專業聯繫。"></span>
+        </li>
+
+        <li>
+            <a href="#" target="_blank">GitHub</a>
+            – <span data-en="See my coding projects and contributions." data-zh="查看我的程式專案與貢獻。"></span>
+        </li>
+
+        <li>
+            <span data-en="Contact me through my personal email."
+                  data-zh="透過我的個人電子郵件聯絡我。"></span>
+        </li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2026 Brooklyn Loomis-JuneRay</p>
+</footer>
+
+<!-- SCRIPTS -->
+<script>
+function toggleTheme() {
+    document.body.classList.toggle("dark");
+}
+
+function setLanguage(lang) {
+    document.querySelectorAll("[data-" + lang + "]").forEach(el => {
+        el.textContent = el.getAttribute("data-" + lang);
+    });
+}
+</script>
+
 </body>
 </html>
