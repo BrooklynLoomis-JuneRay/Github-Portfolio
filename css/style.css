@@ -244,6 +244,7 @@ header p {
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
+   justify-content: flex-end;
     font-weight: 500;
     box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
     transition: all 0.25s ease;
